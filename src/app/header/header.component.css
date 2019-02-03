@@ -1,0 +1,11 @@
+h1 {
+    padding: 0px;
+    margin-bottom: 0px;
+}
+.header {
+    border-bottom: 4px solid;
+}
+.title {
+    border: 0px solid;
+    box-shadow: none;
+}

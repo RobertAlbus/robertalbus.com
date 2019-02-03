@@ -1,0 +1,32 @@
+<div *ngFor="let p of projectsList" 
+  (click)="p.toggleExpanded()" 
+  (mouseenter)="p.toggleHover(true)"
+  (mouseleave)="p.toggleHover(false)"
+  class="project" >
+  
+  
+  <h3 class="title">{{ p.name }}</h3> <br class="mobile-linebreak"/>
+  <div *ngFor="let tag of p.tags" class="tag" >
+    {{tag}}
+  </div>
+
+  <div *ngIf="!p.isExpanded">
+    <p>
+      {{ p.description.split('.')[0] + '.' }}
+      <span *ngIf="p.hover" class="moreOrLEss"> . . </span>
+    </p>
+  </div>
+  <div *ngIf="p.isExpanded">
+    <p>
+      {{ p.description }}
+    </p>
+
+    <div *ngIf="p.link" class="projectLink">
+        Live: <a  href="{{ p.link }}">{{ p.link.split('//')[1] }}</a>
+    </div>
+
+    <div *ngIf="p.repo" class="projectLink">
+      Repo: <a href="{{ p.repo }}">{{ p.repo.split('//')[1] }}</a>
+    </div>
+  </div>
+</div>

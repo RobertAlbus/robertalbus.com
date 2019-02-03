@@ -1,1 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --black: #3d3d4d;
+  --black-light: #9d9dad;
+  --url-color: #4d4d9d;
+  --white: #efefef;
+  --breakpoint: 800px;
+}
+html {
+  background-color: var(--white);
+}
+* {
+  color: var(--black);
+  box-sizing: border-box;
+  box-shadow: none;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  cursor: default;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+a {
+  color: var(--url-color);
+  background: var(--white);
+  padding: 1px 5px;
+}
+a:hover {
+  color: var(--white);
+  /* background-color: var(--url-color); */
+  background-image: linear-gradient(var(--url-color), var(--url-color), var(--url-color), var(--black)); 
+}
+#outer-container {
+  width: 800px;
+  max-width: 100%;
+  position: relative;
+  padding: 30px 70px;
+  /* left: 70px;
+  top: 30px; */
+}
+.noSelect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}
+.full { width: 100%; }
+.half { width: 50%; }
+
+@media ( max-width: 800px ) {
+  #outer-container {
+    
+    /* left: 0px;
+    top: 0px; */
+    padding: 20px;
+  }
+}

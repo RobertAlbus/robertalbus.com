@@ -1,0 +1,24 @@
+<form 
+  [formGroup]="form"
+  (ngSubmit)="onSubmit(form.value)"
+  autocomplete="off"
+  style="text-align: right;">
+
+  <label for="nameInput">Name</label>
+  <input type="text"
+    id="nameInput"
+    [formControl]="form.controls['name']">
+  <br/>
+  <label for="emailInput">Email</label>
+  <input type="text"
+    id="emailInput"
+    [formControl]="form.controls['email']">
+  <br/>
+<label for="messageInput">Message</label>
+<textarea type="text"
+  id="messageInput"
+  [formControl]="form.controls['message']"
+  rows="3"></textarea>
+  <br>
+  <button type="submit">Send it</button>
+</form>

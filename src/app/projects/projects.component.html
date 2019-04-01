@@ -13,7 +13,7 @@
   <div *ngIf="!p.isExpanded">
     <p>
       {{ p.description.split('.')[0] + '.' }}
-      <span *ngIf="p.hover" class="moreOrLEss"> . . </span>
+      <span *ngIf="p.hover" class="moreOrLEss" style="font-size: inherit"> . . </span>
     </p>
   </div>
   <div *ngIf="p.isExpanded">

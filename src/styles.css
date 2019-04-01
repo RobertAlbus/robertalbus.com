@@ -19,6 +19,7 @@ html {
   font-weight: 400;
   font-size: 1.2rem;
   cursor: default;
+  line-break: strict;
 }
 h1 {
   font-size: 3rem;
@@ -40,12 +41,10 @@ a:hover {
   background-image: linear-gradient(var(--url-color), var(--url-color), var(--url-color), var(--black)); 
 }
 #outer-container {
-  width: 800px;
+  width: 850px;
   max-width: 100%;
   position: relative;
   padding: 30px 70px;
-  /* left: 70px;
-  top: 30px; */
 }
 .noSelect {
     -webkit-touch-callout: none; /* iOS Safari */
@@ -56,14 +55,28 @@ a:hover {
               user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome and Opera */
 }
-.full { width: 100%; }
-.half { width: 50%; }
-
 @media ( max-width: 800px ) {
+  * {
+    overflow-y: scroll;
+  }
+  ::-webkit-scrollbar { 
+    display: none; 
+}
   #outer-container {
-    
-    /* left: 0px;
-    top: 0px; */
     padding: 20px;
+  }
+  p {
+    font-size: 1rem;
+
+  }
+  a {
+    display: block;
+    font-size: 1rem;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  a:hover {
+    background-image: none;
+    color: var(--url-color);
   }
 }

@@ -7,19 +7,26 @@ import { Project } from '../projects/project'
 export class ProjectsService {
   projectsList: Project[];
   constructor() {
-    this.projectsList = [
+  this.projectsList = [
+    new Project('Event Listings website', 
+    'Lists upcoming events for a Calgary-based community group Habitat Studio Social. \
+    Static front end hosted in S3 via Cloudfront. Backend created with serverless technologies. \
+    Saves aprox. $300/year in operational costs compared to the previous wordpress website.', 
+    'http://studiosocial.robertalbus.com', 
+    'http://github.com/RobertAlbus/studio-social', 
+    ['Angular 7', 'AWS', 'Lambda functions', 'NODE.js', 'API Gateway', 'DynamoDB', 'S3', 'AJAX', 'HTTPS']),
     new Project('Personal website', 
     'This portfolio site. Static Angular front end hosted in S3. Cloudfront used to facilitate proper HTML5 routing for SPAs', 
     'http://robertalbus.com', 
     'http://github.com/RobertAlbus/portfolio', 
-    ['Angular 7', 'HTML5', 'AWS: Cloudfront, S3']),
+    ['Angular 7', 'HTML5', 'AWS: Cloudfront, S3, Certificate Manager']),
     new Project('To-Do application', 
-    'A basic to-do application. Uses local storage for persistence accross sessions. ', 
+    'A basic to-do application. Uses local storage for persistence across sessions. ', 
     'http://todo.robertalbus.com',
     'http://github.com/RobertAlbus/to-do',
-    ['Angular 7','HTML & CSS', 'AWS: Cloudfront', 'AWS: S3']),
+    ['Angular 7','HTML & CSS', 'AWS: Cloudfront, S3']),
     new Project('Event Bus', 
-    'Exploring pub-sub architecture with Mediator pattern.', 
+    'Exploring pub-sub relationship with Mediator pattern.', 
     '',
     'http://github.com/RobertAlbus/event_bus',
     ['Ruby']),

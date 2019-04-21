@@ -5,9 +5,10 @@
   class="project" >
   
   
-  <h3 class="title">{{ p.name }}</h3> <br class="mobile-linebreak"/>
+  <h3 class="title">{{ p.name }}</h3> 
+  <br>
   <div *ngFor="let tag of p.tags" class="tag" >
-    {{tag}}
+    {{ tag }}
   </div>
 
   <div *ngIf="!p.isExpanded">

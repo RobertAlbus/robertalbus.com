@@ -8,6 +8,14 @@ export class ProjectsService {
   projectsList: Project[];
   constructor() {
   this.projectsList = [
+    new Project(' Static Site Markdown CMS Library', 
+    'Currently prototyping. \n \
+    Create a static blog or entirely static site with a set of \
+    developer-oriented CMS tools. Markdown to HTML conversion powered by ngx-markdown, \
+    an Angular component that harnesses marked.js and and prism.js', 
+    'http://ngx-markdown-blog.robertalbus.com',
+    '',
+    ['Angular 7', 'Angular schematics', 'angular libraries', 'npm', 'markdown']),
     new Project('Event Listings website', 
     'Lists upcoming events for a Calgary-based community group Habitat Studio Social. \
     Static front end hosted in S3 via Cloudfront. Backend created with serverless technologies. \

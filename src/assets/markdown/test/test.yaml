@@ -1,0 +1,12 @@
+blog:
+  path: /assets/markdown/test/
+  items:
+    - test-blog-1.md
+project:
+  path: /assets/markdown/test/
+  content:
+    - test-project-1.md
+siteContent:
+  path: /assets/markdown/test/
+  content:
+    - test-content-1.md

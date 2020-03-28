@@ -13,7 +13,6 @@ html {
   color: var(--black);
   box-sizing: border-box;
   box-shadow: none;
-  padding: 0px;
   margin: 0px;
   margin-bottom: 10px;
   font-weight: 400;
@@ -41,7 +40,7 @@ a {
 }
 a:hover {
   color: var(--white);
-  /* background-color: var(--url-color); */
+  background-color: var(--url-color);
   background-image: linear-gradient(var(--url-color), var(--url-color), var(--url-color), var(--black)); 
 }
 #outer-container {
@@ -65,7 +64,7 @@ a:hover {
   }
   ::-webkit-scrollbar { 
     display: none; 
-}
+  }
   #outer-container {
     padding: 20px;
   }

@@ -4,9 +4,9 @@ blog:
     - test-blog-1.md
 project:
   path: /assets/markdown/test/
-  content:
+  items:
     - test-project-1.md
 siteContent:
   path: /assets/markdown/test/
-  content:
+  items:
     - test-content-1.md

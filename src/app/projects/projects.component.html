@@ -1,33 +1,8 @@
-<div *ngFor="let p of projectsList" 
-  (click)="p.toggleExpanded()" 
-  (mouseenter)="p.toggleHover(true)"
-  (mouseleave)="p.toggleHover(false)"
-  class="project" >
-  
-  
-  <h3 class="title">{{ p.name }}</h3> 
-  <br>
-  <div *ngFor="let tag of p.tags" class="tag" >
-    {{ tag }}
-  </div>
+<div *ngIf="projectRepository.hasItems">
 
-  <div *ngIf="!p.isExpanded">
-    <p>
-      {{ p.description.split('.')[0] + '.' }}
-      <span *ngIf="p.hover" class="moreOrLEss" style="font-size: inherit"> . . </span>
-    </p>
-  </div>
-  <div *ngIf="p.isExpanded">
-    <p>
-      {{ p.description }}
-    </p>
-
-    <div *ngIf="p.link" class="projectLink">
-        Live: <a  href="{{ p.link }}">{{ p.link.split('//')[1] }}</a>
-    </div>
-
-    <div *ngIf="p.repo" class="projectLink">
-      Repo: <a href="{{ p.repo }}">{{ p.repo.split('//')[1] }}</a>
-    </div>
-  </div>
+    <app-project
+    *ngFor="let p of projectRepository.items | async"
+    [project]="p"
+    ></app-project>
 </div>
+<div *ngIf="!projectRepository.hasItems"> No projects to display right now. Please check back later.</div>

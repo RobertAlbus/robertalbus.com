@@ -10,7 +10,8 @@ import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { NavComponent } from './header/nav/nav.component'
+import { NavComponent } from './header/nav/nav.component';
+import { ProjectComponent } from './projects/project/project.component'
 
 const routes: Routes = [
   { path: '', component: AboutComponent },
@@ -26,7 +27,8 @@ const routes: Routes = [
     AboutComponent,
     ProjectsComponent,
     ContactComponent,
-    NavComponent
+    NavComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,

@@ -24,8 +24,8 @@ export abstract class BaseRepository<T extends BaseContent> implements OnDestroy
     this.getMetadata(metadataSliceName);
   }
 
-  public hasItems(): boolean {
-    get: { return this.items.value.length > 0; }
+  public get hasItems(): boolean {
+    return this.items.value.length > 0;
   }
 
   private domParser: DOMParser;
@@ -76,7 +76,7 @@ export abstract class BaseRepository<T extends BaseContent> implements OnDestroy
           tempArray.push(fullyMappedContent)
           self.items.next(tempArray); 
         });
-        
+
         this.subscriptions.push(subscription);
     }
   }

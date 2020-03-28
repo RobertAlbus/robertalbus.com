@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  contentMetadataPath: '/assets/markdown/test/test.yaml'
+  contentMetadataUrl: '/assets/markdown/test/test.yaml'
 };
 
 /*

@@ -10,7 +10,6 @@ export function registerMarkdownExtensionRules() {
 const regexpDisplay = /== DISPLAY ==/;
 // const shouldDisplay = () => {
 //     Marked.setBlockRule(regexpDisplay, function (execArr) {
-//         console.log("should display")
         
 //     });
 // }
@@ -33,7 +32,6 @@ const mdDirectives = () => {
     Marked.setBlockRule(customChannels, function (execArr) {
         const channel: string = execArr && execArr[1];
         const content: string = execArr && execArr[2];
-        console.log(channel, content)
     
         switch(channel) {
             case 'TITLE': { // should this be BLOG_TITLE??

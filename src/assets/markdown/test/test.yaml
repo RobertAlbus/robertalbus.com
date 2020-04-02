@@ -6,7 +6,7 @@ project:
   path: /assets/markdown/test/
   items:
     - test-project-1.md
-siteContent:
+main-page:
   path: /assets/markdown/test/
   items:
     - test-content-1.md

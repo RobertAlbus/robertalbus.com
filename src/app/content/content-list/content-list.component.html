@@ -1,0 +1,10 @@
+<div *ngIf="items.length">
+
+    <app-content-item
+    *ngFor="let item of items"
+    [item]="item"
+    [hasContentBorder]="hasContentBorder"
+    ></app-content-item>
+</div>
+
+<div *ngIf="!items.length"> No items to display right now. Please check back later.</div>

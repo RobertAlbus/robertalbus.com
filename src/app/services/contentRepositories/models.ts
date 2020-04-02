@@ -15,6 +15,19 @@ export class BaseContent {
   }
 }
 
+export type ContentTypeUnion = 
+  Project | 
+  BlogPost | 
+  SiteContent;
+export type ContentTypeArrayUnion = 
+  Project[] | 
+  BlogPost[] | 
+  SiteContent[];
+
+export class SiteContent extends BaseContent {
+  sortOrder: number;
+}
+
 export class Project extends BaseContent {
     repo: string;
     liveSite: string;

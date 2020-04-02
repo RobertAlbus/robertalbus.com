@@ -1,0 +1,3 @@
+<div *ngIf="item.shouldDisplay" 
+[ngClass]="{'content-item': true, 'content-border': hasContentBorder}" 
+innerHTML="{{ item.content }}" ></div>

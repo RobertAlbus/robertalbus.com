@@ -1,8 +1,0 @@
-<div *ngIf="projectRepository.hasItems">
-
-    <app-project
-    *ngFor="let p of projectRepository.items | async"
-    [project]="p"
-    ></app-project>
-</div>
-<div *ngIf="!projectRepository.hasItems"> No projects to display right now. Please check back later.</div>

@@ -1,12 +1,12 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { ProjectRepository } from '../services/contentRepositories/project.repository';
-import { Project } from '../services/contentRepositories/models';
+import { ProjectRepository } from '../../services/contentRepositories/project.repository';
+import { Project } from '../../services/contentRepositories/models';
 import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+  styleUrls: []
 })
 export class ProjectsComponent implements OnInit, OnDestroy {
 

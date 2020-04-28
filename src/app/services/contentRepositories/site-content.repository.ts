@@ -13,8 +13,6 @@ export class MainPageRepository extends BaseRepository<SiteContent> {
     super(metaDataFetcherService, http);
 
     this.init("main-page");
-
-    console.log(this.items)
   }
 
   map(document: Document, baseObj: BaseContent): SiteContent {

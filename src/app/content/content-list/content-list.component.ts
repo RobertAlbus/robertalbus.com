@@ -16,6 +16,5 @@ export class ContentListComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log("items", this.items)
   }
 }

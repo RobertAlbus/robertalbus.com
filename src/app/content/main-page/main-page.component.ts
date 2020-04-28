@@ -10,13 +10,12 @@ import { MainPageRepository } from 'src/app/services/contentRepositories/site-co
 export class MainPageComponent implements OnInit, OnDestroy {
 
   contentList: SiteContent[];
-
   subscriptions: Subscription[] = [];
+
   constructor(public repository: MainPageRepository){
 
     let subscription = repository.items.subscribe(contentList => {
       this.contentList = contentList;
-      console.log(contentList)
     });
 
     this.subscriptions.push(subscription);

@@ -14,7 +14,5 @@ export class ContentItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log("has content border:", this.hasContentBorder)
   }
-
 }

@@ -20,7 +20,8 @@ export class MetadataAjaxService {
   }
 
   getMetadata() {
-    const request = this.http.get(environment.contentMetadataUrl, {
+    const requestUrl = environment.contentBaseUrl + environment.contentMetadataItem;
+    const request = this.http.get(requestUrl, {
       observe: 'body',
       responseType: "text"
     });

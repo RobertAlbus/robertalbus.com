@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  contentMetadataUrl: '/assets/markdown/test/test.yaml'
+  contentBaseUrl: 'https://raw.githubusercontent.com/RobertAlbus/robertalbus-content/draft/',
+  contentMetadataItem: 'content.yml',
 };
 
 /*

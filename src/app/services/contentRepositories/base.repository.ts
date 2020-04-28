@@ -5,6 +5,7 @@ import { BaseContent } from './models';
 import { HttpClient } from '@angular/common/http';
 import { Marked } from 'marked-ts';
 import { BehaviorSubject, Subscription } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 
 @Injectable({
@@ -59,8 +60,8 @@ export abstract class BaseRepository<T extends BaseContent> implements OnDestroy
     const self = this;
 
     for (let markdownAssetUrl of metadata.items) {
-
-        const request = this.http.get(metadata.path + markdownAssetUrl, {
+      const requestUrl = environment.contentBaseUrl + metadata.path + markdownAssetUrl;
+        const request = this.http.get(requestUrl, {
           observe: 'body',
           responseType: "text"
         });

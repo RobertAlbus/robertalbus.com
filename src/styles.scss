@@ -72,13 +72,13 @@ a:hover {
 
   }
   a {
-    display: block;
+    // display: block;
     font-size: 1rem;
     padding-left: 0px;
     margin-left: 0px;
   }
-  a:hover {
-    background-image: none;
-    color: var(--url-color);
-  }
+  // a:hover {
+  //   background-image: none;
+  //   color: var(--url-color);
+  // }
 }

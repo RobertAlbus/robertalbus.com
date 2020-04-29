@@ -1,4 +1,5 @@
 export const environment = {
   production: true,
-  contentMetadataUrl: ''
+  contentBaseUrl: 'https://raw.githubusercontent.com/RobertAlbus/robertalbus-content/master/',
+  contentMetadataItem: 'content.yml',
 };
